@@ -1,0 +1,29 @@
+{
+  "name": "popsicle-ui",
+  "version": "0.0.1",
+  "description": "A set of components for use in Cycle.js apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyclejs-community/popsicle-ui.git"
+  },
+  "keywords": [
+    "cyclejs",
+    "frp",
+    "reactive-programming",
+    "ui",
+    "material-design",
+    "flat-ui",
+    "design",
+    "components"
+  ],
+  "author": "Eshan Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyclejs-community/popsicle-ui/issues"
+  },
+  "homepage": "https://github.com/cyclejs-community/popsicle-ui#readme"
+}
