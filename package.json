@@ -1,14 +1,11 @@
 {
-  "name": "popsicle-ui",
+  "name": "cycle-ui-kit",
   "version": "0.0.1",
   "description": "A set of components for use in Cycle.js apps",
   "main": "index.js",
-  "scripts": {
-    "test": "gulp test"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyclejs-community/popsicle-ui.git"
+    "url": "git+https://github.com/cyclejs-community/cycle-ui-kit.git"
   },
   "keywords": [
     "cyclejs",
@@ -20,10 +17,13 @@
     "design",
     "components"
   ],
-  "author": "Eshan Singh",
+  "author": "CycleJS Community",
   "license": "MIT",
+  "contributors": [
+      "Eshan Singh"
+  ],
   "bugs": {
-    "url": "https://github.com/cyclejs-community/popsicle-ui/issues"
+    "url": "https://github.com/cyclejs-community/cycle-ui-kit/issues"
   },
-  "homepage": "https://github.com/cyclejs-community/popsicle-ui#readme"
+  "homepage": "https://github.com/cyclejs-community/cycle-ui-kit"
 }
