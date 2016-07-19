@@ -45,3 +45,6 @@ dist
 # TS generated files
 src/*.d.ts
 src/*.js
+
+# Local tarball package files
+*.tgz
