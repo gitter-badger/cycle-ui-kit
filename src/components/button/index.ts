@@ -23,4 +23,4 @@ function ButtonComponent(sources: IButtonSources): IButtonSinks {
   return null;
 }
 
-export const Button = sources => isolate(ButtonComponent)(sources);
+export const Button = (sources: IButtonSources) => isolate(ButtonComponent)(sources);
