@@ -14,5 +14,12 @@ pick and choose skins to go along with the plain components.
 
 ## Contributing
 
-With these lofty goals, we need all the help we can get.
-See the CONTRIBUTING.md file for details.
+With these lofty goals, we need all the help we can get. To help with this project (thanks!):
+* Clone this project.
+* Install all of the global tools and local dependencies with:
+
+```
+$ npm i -g gulp xo commitizen && npm i
+```
+
+* Run `gulp info` for some guidelines.
