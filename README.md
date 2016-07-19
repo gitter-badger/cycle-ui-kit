@@ -1,9 +1,18 @@
-# popsicle-ui
+# cycle-ui-kit
 
-Popsicle UI is a project aimed at making a common set of components
-for use in Cycle.js apps. Material Design, Flat UI and other designs
-along with just the plain components.
+Cycle UI Kit is a project aimed at making a common set of 
+skinnable, reusable components for use in Cycle.js apps.
+Skins such as Material Design, Flat UI and other designs
+will be developed in tandem with the library, allowing you to
+pick and choose skins to go along with the plain components.
 
-# Contributing
+## Goals
 
-You're welcome to help. See the CONTRIBUTING.md file for details.
+* Create a set of clean, isolated, resuable, skinnable, composable set of Cycle.js components which can be used with minimal effort from the developer.
+* Adhere to best practices and set an easy-to-use and intuitive pattern for writing skinnable, reusable and composable Cycle.js components.
+* Create as many skins as possible for the components, allow for the community to foster around making such skins as standalone projects. 
+
+## Contributing
+
+With these lofty goals, we need all the help we can get.
+See the CONTRIBUTING.md file for details.
