@@ -38,3 +38,10 @@ jspm_packages
 
 # Editor files and folders
 .vscode
+
+# Distributions
+dist
+
+# TS generated files
+src/*.d.ts
+src/*.js
