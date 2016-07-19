@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/cyclejs-community/cycle-ui-kit",
   "devDependencies": {
+    "cz-conventional-changelog": "^1.1.6",
     "typescript": "^1.8.10",
     "typings": "^1.3.1",
     "xo": "^0.16.0"
@@ -45,8 +46,14 @@
       "shared-node-browser"
     ],
     "rules": {
-      "consistent-this": ["warn", "self"],
-      "dot-location": ["warn", "property"],
+      "consistent-this": [
+        "warn",
+        "self"
+      ],
+      "dot-location": [
+        "warn",
+        "property"
+      ],
       "dot-notation": "error",
       "brace-style": "1tbs",
       "curly": "error",
@@ -68,16 +75,32 @@
       "no-new-symbol": "error",
       "arrow-spacing": "warn",
       "block-scoped-var": "warn",
-      "func-style": ["warn", "expression"],
-      "generator-star": ["warn", "middle"],
+      "func-style": [
+        "warn",
+        "expression"
+      ],
+      "generator-star": [
+        "warn",
+        "middle"
+      ],
       "no-case-declarations": "off",
-      "comma-style": ["error", "last"],
-      "comma-dangle": ["error", "always"],
+      "comma-style": [
+        "error",
+        "last"
+      ],
+      "comma-dangle": [
+        "error",
+        "always"
+      ],
       "default-case": "warn",
-      "quotes": ["error", "double", {
-        "avoidEscape": true,
-        "allowTemplateLiterals": true
-      }],
+      "quotes": [
+        "error",
+        "double",
+        {
+          "avoidEscape": true,
+          "allowTemplateLiterals": true
+        }
+      ],
       "complexity": "off",
       "no-constant-condition": "error",
       "no-debugger": "warn",
@@ -85,6 +108,11 @@
       "no-duplicate-case": "error",
       "no-empty": "error",
       "no-floating-decimal": "error"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
