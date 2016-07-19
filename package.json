@@ -2,11 +2,6 @@
   "name": "cycle-ui-kit",
   "version": "0.0.1",
   "description": "A set of components for use in Cycle.js apps",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cyclejs-community/cycle-ui-kit.git"
