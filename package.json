@@ -24,7 +24,8 @@
   "author": "CycleJS Community",
   "license": "MIT",
   "contributors": [
-    "Eshan Singh"
+    "Eshan Singh",
+    "Sudarsan Balaji"
   ],
   "bugs": {
     "url": "https://github.com/cyclejs-community/cycle-ui-kit/issues"
