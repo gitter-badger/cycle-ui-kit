@@ -27,7 +27,12 @@
   },
   "homepage": "https://github.com/cyclejs-community/cycle-ui-kit",
   "devDependencies": {
+    "@reactivex/rxjs": "^5.0.0-beta.10",
+    "chalk": "^1.1.3",
     "cz-conventional-changelog": "^1.1.6",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.6",
+    "listr": "^0.4.3",
     "typescript": "^1.8.10",
     "typings": "^1.3.1",
     "xo": "^0.16.0"
@@ -55,7 +60,10 @@
         "property"
       ],
       "dot-notation": "error",
-      "brace-style": ["error", "1tbs"],
+      "brace-style": [
+        "error",
+        "1tbs"
+      ],
       "curly": "error",
       "lines-around-comment": [
         "error",
@@ -108,7 +116,10 @@
       "no-duplicate-case": "error",
       "no-empty": "error",
       "no-floating-decimal": "error"
-    }
+    },
+    "ignores": [
+      "gulpfile.js"
+    ]
   },
   "config": {
     "commitizen": {
