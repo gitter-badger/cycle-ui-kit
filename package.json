@@ -28,6 +28,63 @@
   "homepage": "https://github.com/cyclejs-community/cycle-ui-kit",
   "devDependencies": {
     "typescript": "^1.8.10",
-    "typings": "^1.3.1"
+    "typings": "^1.3.1",
+    "xo": "^0.16.0"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 4,
+    "semicolon": true,
+    "envs": [
+      "node",
+      "browser",
+      "es6",
+      "shared-node-browser"
+    ],
+    "rules": {
+      "consistent-this": ["warn", "self"],
+      "dot-location": ["warn", "property"],
+      "dot-notation": "error",
+      "brace-style": "1tbs",
+      "curly": "error",
+      "lines-around-comment": [
+        "error",
+        {
+          "beforeBlockComment": false,
+          "afterBlockComment": true,
+          "beforeLineComment": true,
+          "afterLineComment": false,
+          "allowObjectStart": false,
+          "allowObjectEnd": false,
+          "allowArrayStart": false,
+          "allowArrayEnd": false
+        }
+      ],
+      "no-confusing-arrow": "warn",
+      "no-fallthrough": "error",
+      "no-new-symbol": "error",
+      "arrow-spacing": "warn",
+      "block-scoped-var": "warn",
+      "func-style": ["warn", "expression"],
+      "generator-star": ["warn", "middle"],
+      "no-case-declarations": "off",
+      "comma-style": ["error", "last"],
+      "comma-dangle": ["error", "always"],
+      "default-case": "warn",
+      "quotes": ["error", "double", {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }],
+      "complexity": "off",
+      "no-constant-condition": "error",
+      "no-debugger": "warn",
+      "no-delete-var": "error",
+      "no-duplicate-case": "error",
+      "no-empty": "error",
+      "no-floating-decimal": "error"
+    }
   }
 }
