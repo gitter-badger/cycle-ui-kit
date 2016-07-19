@@ -1,6 +1,6 @@
 import { DOMSource } from '@cycle/dom/xstream-typings';
 import xs, { Stream } from 'xstream';
-import { VNode } from '@cycle/dom';
+import { a, VNode } from '@cycle/dom';
 import isolate from '@cycle/isolate';
 
 export interface IButtonSources {
@@ -18,9 +18,42 @@ export interface IButtonSinks {
   disabled$: Stream<boolean>;
 }
 
-function ButtonComponent(sources: IButtonSources): IButtonSinks {
+function preventDefault(ins: Stream<Event>): Stream<Event> {
+  return ins.map(ev => {
+    ev.preventDefault();
+    return ev;
+  });
+}
 
-  return null;
+function ButtonComponent(sources: IButtonSources): IButtonSinks {
+  const dom = sources.dom;
+  const buttonElement = dom.select('a.cycle.ui.kit.button');
+  const click$ = buttonElement.events('click').compose(preventDefault) as Stream<MouseEvent>;
+  const hover$ = buttonElement.events('mouseover').compose(preventDefault) as Stream<MouseEvent>;
+  const focus$ = buttonElement.events('focus').compose(preventDefault) as Stream<FocusEvent>;
+  const pressed$ =
+    xs.merge(
+      buttonElement.events('mousedown').compose(preventDefault).mapTo(true),
+      buttonElement.events('mouseup').compose(preventDefault).mapTo(false)
+    );
+  const disabled$ = sources.disabled$;
+  const vdom$ =
+    xs.combine(sources.disabled$, sources.content$)
+      .map(([disabled, content]) => {
+        const disabledClass = disabled ? '.disabled' : '';
+        const buttonClasses = '.cycle.ui.kit' + disabledClass + '.button';
+        return a(buttonClasses, [
+          content
+        ]);
+      });
+  return {
+    dom: vdom$,
+    click$,
+    hover$,
+    focus$,
+    pressed$,
+    disabled$
+  };
 }
 
 export const Button = (sources: IButtonSources) => isolate(ButtonComponent)(sources);
