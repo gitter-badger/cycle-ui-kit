@@ -55,7 +55,7 @@
         "property"
       ],
       "dot-notation": "error",
-      "brace-style": "1tbs",
+      "brace-style": ["error", "1tbs"],
       "curly": "error",
       "lines-around-comment": [
         "error",
