@@ -1,10 +1,12 @@
 import { DOMSource } from '@cycle/dom/xstream-typings';
 import xs, { Stream } from 'xstream';
 import { VNode } from '@cycle/dom';
+import isolate from '@cycle/isolate';
 
 export interface IButtonSources {
   dom: DOMSource;
   disabled$: Stream<boolean>;
+  content$: Stream<VNode>;
 }
 
 export interface IButtonSinks {
@@ -16,6 +18,9 @@ export interface IButtonSinks {
   disabled$: Stream<boolean>;
 }
 
-export function Button(sources: IButtonSources): IButtonSinks {
+function ButtonComponent(sources: IButtonSources): IButtonSinks {
+
   return null;
 }
+
+export const Button = sources => isolate(ButtonComponent)(sources);
