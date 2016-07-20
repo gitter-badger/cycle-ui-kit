@@ -85,9 +85,9 @@
         "warn",
         "expression"
       ],
-      "generator-star": [
+      "generator-star-spacing": [
         "warn",
-        "middle"
+        "both"
       ],
       "no-case-declarations": "off",
       "comma-style": [
@@ -113,7 +113,11 @@
       "no-delete-var": "error",
       "no-duplicate-case": "error",
       "no-empty": "error",
-      "no-floating-decimal": "error"
+      "no-floating-decimal": "error",
+      "max-statements-per-line": [
+          "warn",
+          3
+      ]
     }
   },
   "config": {
