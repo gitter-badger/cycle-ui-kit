@@ -2,7 +2,6 @@
 
 const gulp = require('gulp');
 const Listr = require('listr');
-const Rx = require('@reactivex/rxjs');
 const chalk = require('chalk');
 
 let newline = console.log.bind(this, "\n");
