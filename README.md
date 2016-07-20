@@ -1,5 +1,7 @@
 # cycle-ui-kit
 
+[![Join the chat at https://gitter.im/cyclejs-community/cycle-ui-kit](https://badges.gitter.im/cyclejs-community/cycle-ui-kit.svg)](https://gitter.im/cyclejs-community/cycle-ui-kit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Cycle UI Kit is a project aimed at making a common set of 
 skinnable, reusable components for use in Cycle.js apps.
 Skins such as Material Design, Flat UI and other designs
